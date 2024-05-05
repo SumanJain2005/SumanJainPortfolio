@@ -502,6 +502,7 @@ span{
     .home-img img{
         width: 70vw;
         margin-top: 4rem;
+        padding-bottom: 2rem;
     }
     .about{
         flex-direction: column;
@@ -521,12 +522,17 @@ span{
     }
 }
 @media (max-width: 617px){
+    .header .home{
+        overflow-x: none;
+    }
     .portfolio-container{
         grid-template-columns: 1fr;
     }
+
     .home-img img{
         width: 80vw;
-        margin-top: 80rem;
+        margin-top: 0;
+        padding-bottom: 2rem;
     }
     .about-image img{
         width: 100vw;
