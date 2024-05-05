@@ -41,13 +41,24 @@ ScrollReveal({
  ScrollReveal().reveal('.home-content , heading',{origin: 'top'});
  ScrollReveal().reveal('.home-img , .services-container , .portfolio-box , .timeline',{origin: 'bottom'});
  ScrollReveal().reveal('.about-image , .left-container',{origin: 'left'});
- ScrollReveal().reveal('.about-content , .right-container',{origin: 'right'});
+ ScrollReveal().reveal('.about-content , .right-container',{origin: 'bottom'});
  
 /*===============Typed JS==========================*/
 const typed = new Typed('.multiple-text', {
-    strings: ['FrontEnd Web Developer','Web Designer','Aspiring Dev'],
+    strings: ['FrontEnd Dev','Web Designer','Aspiring Dev'],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
     loop: true,
+});
+/* */
+const timeline = document.querySelector('.timeline');
+
+window.addEventListener('scroll', () => {
+    const timelinePosition = timeline.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (timelinePosition < windowHeight * 0.75) {
+        timeline.classList.add('animate');
+    }
 });
