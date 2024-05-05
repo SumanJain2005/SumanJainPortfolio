@@ -507,6 +507,9 @@ span{
     .about{
         flex-direction: column;
     }
+    .about-content , .about-content h2{
+        text-align: center;
+    }
     .about-image img{
         width: 90vw;
         margin-top: 4rem;
@@ -527,6 +530,9 @@ span{
     }
     .portfolio-container{
         grid-template-columns: 1fr;
+    }
+    .about-content , .about-content h2{
+        text-align: center;
     }
 
     .home-img img{
