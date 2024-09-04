@@ -198,6 +198,7 @@ span{
 
 
 .portfolio {
+    
     background: var(--snd-bf-color);
 }
 .portfolio h2{
@@ -207,7 +208,7 @@ span{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap:2.5rem;
+    gap: 2.5rem;
 }
 .portfolio-container .portfolio-box{
     position: relative;
